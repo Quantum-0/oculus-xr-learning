@@ -24,3 +24,9 @@ https://www.youtube.com/playlist?list=PLpEoiloH-4eMPHceEECeG0Qyb0lT0Eeti
 - Select OVRCameraRig, enable checkbox for Oculus 3, Hand Tracking Support - Controllers and Hands, Passthrough support - supported, insight passthrough - enable
 - Create a cube in front of camera for test
 - Build and Run
+
+## Step 2
+
+- Add OVRSceneManager into the scene
+- Set Place Prefab and Volume Prefab properties with Assets/Oculus/SampleFramework/Usage/SceneManager/Prefabs/Plane and Volume
+- In OVRCameraRig set Scene Support=Supported
