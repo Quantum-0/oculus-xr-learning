@@ -27,6 +27,17 @@ https://www.youtube.com/playlist?list=PLpEoiloH-4eMPHceEECeG0Qyb0lT0Eeti
 
 ## Step 2
 
+### Add irl scene support
+
 - Add OVRSceneManager into the scene
 - Set Place Prefab and Volume Prefab properties with Assets/Oculus/SampleFramework/Usage/SceneManager/Prefabs/Plane and Volume
 - In OVRCameraRig set Scene Support=Supported
+- Build and Run to test
+- Replace Place and Volume with Invisible Place and Invisible Volume to hide them
+
+### Add spawning balls
+
+- Add script to RightHandAnchor spawning balls
+- Add ball prefab, add material with red color and physic material with high bounceness, apply them to the ball prefab
+- Edit -> Project Settings -> Time, set Fixed Timestep to 0.00833333
+
