@@ -53,3 +53,15 @@ https://www.youtube.com/playlist?list=PLpEoiloH-4eMPHceEECeG0Qyb0lT0Eeti
 - Enter in previously created prefab and apply our new material to Mesh Renderer -> materials
 - Replace OVR Scene manager's GLOBAL MESH with our new Global Mesh Renderer Collider Depth
 
+# Second way
+
+- Install Unity-DepthAPI (https://github.com/oculus-samples/Unity-DepthAPI): Package Manager -> Plus -> From git
+- Delete Assets/Oculus/VR/Plugins/1.89.0/AndroidOpenXR/OVRPlugin and rename Assets/Oculus/VR/Plugins/1.89.0/Win64OpenXR/OVRPlugin to any another name
+- Click small oculus button in bottom right corner - Project Setup Tools - Fix all
+- Create empty object at scene, name it Passthrough Depth, Add component Enviroment Depth Occlusion Controller
+- Set soft or hard occlusion type in the component
+- Create new material "White Depth", change shader to Meta->Depth->BiRP->Occlusion Standart, apply that material to the cube
+- Change bounce ball material's shader to the same
+- Disable OVRHandPrefabs
+- Build and Run!
+
