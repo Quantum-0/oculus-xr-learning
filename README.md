@@ -42,3 +42,14 @@ https://www.youtube.com/playlist?list=PLpEoiloH-4eMPHceEECeG0Qyb0lT0Eeti
 - Edit -> Project Settings -> Time, set Fixed Timestep to 0.00833333
 - In OVRSceneManager set Prefab Overrides: GLOBAL_MESH=Global Mesh Collider from assets
 
+## Step 3
+
+# First way
+
+- Create material, set shader = SelectivePassthrough, Render Queue = 4000, Inflation = 0.003, Blend Color = Substract
+- Apply it to OVRHandPrefab's Skinned Mesh Renderer's Materials
+- Make a copy of Global Mesh Renderer Collider, name it Global Mesh Renderer Collider Depth
+- Make a copy of previously created passthrough material
+- Enter in previously created prefab and apply our new material to Mesh Renderer -> materials
+- Replace OVR Scene manager's GLOBAL MESH with our new Global Mesh Renderer Collider Depth
+
