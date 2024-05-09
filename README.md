@@ -40,4 +40,5 @@ https://www.youtube.com/playlist?list=PLpEoiloH-4eMPHceEECeG0Qyb0lT0Eeti
 - Add script to RightHandAnchor spawning balls
 - Add ball prefab, add material with red color and physic material with high bounceness, apply them to the ball prefab
 - Edit -> Project Settings -> Time, set Fixed Timestep to 0.00833333
+- In OVRSceneManager set Prefab Overrides: GLOBAL_MESH=Global Mesh Collider from assets
 
